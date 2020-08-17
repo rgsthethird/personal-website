@@ -1,0 +1,32 @@
+<div id="footer">
+	<div style="width:80%;margin:3.5em auto auto auto;display:flex;">
+		<div id="footer-container">
+			<div id="footer-form">
+				<form id="email-form" action="/" method="POST">
+					<input id="email-input" type="email" name="email" placeholder="Sign Up for Blog Updates" required>
+					<button id="email-submit">SUBMIT</button>
+				</form>
+			</div>
+				<% var today = new Date(); %>
+			<p>Seattle, WA 98122<br><%= today.getFullYear(); %> Rob Schwartz. All rights reserved.</p>
+		</div>
+		<div id="footer-links">
+			<div>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="/undertheumbrella">Blog</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/robert-schwartz-0a4974135/" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.facebook.com/robby.schwartz.7" target="_blank">Facebook</a></li>
+					<li><a href="https://github.com/rgsthethird" target="_blank">Github</a></li>
+					<li><a href="mailto:rob.g.schwartz@gmail.com" target="_blank">Email</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

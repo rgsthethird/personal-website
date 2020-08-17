@@ -1,0 +1,18 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "Website for Resume and Blgo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Rob Schwartz",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "emailjs": "^3.2.1",
+    "express": "^4.17.1",
+    "stickybits": "^3.7.7"
+  }
+}
