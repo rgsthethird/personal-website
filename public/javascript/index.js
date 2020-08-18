@@ -2,8 +2,26 @@ let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth |
 let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
 window.onload = function() {
-  setDimensions();
-};
+				// Sets Element Positions
+				setDimensions();
+				// For contact forms
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					console.log(this);
+					event.preventDefault();
+					emailjs.sendForm('gmail', 'template_wF2l1CBr', this);
+					document.querySelector('#input-name').value = "";
+					document.querySelector('#input-email').value = "";
+					document.querySelector('#input-company').value = "";
+					document.querySelector('#input-phone').value = "";
+					document.querySelector('#input-message').value = "";
+				});
+				document.getElementById('email-form').addEventListener('submit', function(event) {
+					console.log(this);
+					event.preventDefault();
+					emailjs.sendForm('gmail', 'updateregistration', this);
+					document.querySelector('#email-input').value = "";
+				});
+			}
 window.addEventListener("resize", setDimensions);
 
 // Functions

@@ -16,26 +16,6 @@
 			  emailjs.init("user_AVDxqNkp7QD7SFeYdUZRm");
 		   })();
 		</script>
-		<script type="text/javascript">
-			window.onload = function() {
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-					console.log(this);
-					event.preventDefault();
-					emailjs.sendForm('gmail', 'template_wF2l1CBr', this);
-					document.querySelector('#input-name').value = "";
-					document.querySelector('#input-email').value = "";
-					document.querySelector('#input-company').value = "";
-					document.querySelector('#input-phone').value = "";
-					document.querySelector('#input-message').value = "";
-				});
-				document.getElementById('email-form').addEventListener('submit', function(event) {
-					console.log(this);
-					event.preventDefault();
-					emailjs.sendForm('gmail', 'updateregistration', this);
-					document.querySelector('#email-input').value = "";
-				});
-			}
-		</script>
 	</head>
 
 	<body>
