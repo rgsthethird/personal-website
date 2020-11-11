@@ -12,6 +12,7 @@ app.get('/undertheumbrella', function(req, res){
 	res.render("blog");
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+const port = process.env.PORT || 3000;
+app.listen(port, process.env.IP, function(){
 	console.log("Running server...");
 });
