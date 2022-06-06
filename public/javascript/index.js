@@ -1,4 +1,3 @@
-console.log("WORKING SCRIPT!");
 let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 let screenWidth = screen.width;
@@ -23,6 +22,9 @@ window.onload = function() {
 				});
 			}
 window.addEventListener("resize", setDimensions);
+
+let loadingPage = document.getElementById('loading');
+setTimeout(function() {loadingPage.style.top = "-100vh";}, 1500);
 
 // Functions for page display
 function setDimensions() {
