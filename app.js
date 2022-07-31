@@ -12,7 +12,7 @@ app.get('/', function(req, res){
 app.post('/ebay', (req, res) => {
 	const challengeCode = req.query.challenge_code;
 	const verificationToken = 'asdfjhawenljk32h234asdfjkh_asdfaks2jvnme3';
-	const endpoint = 'www.robschwartz.co/ebay'
+	const endpoint = 'https://www.robschwartz.co/ebay'
 	const hash = createHash('sha256');
 	hash.update(challengeCode);
 	hash.update(verificationToken);
