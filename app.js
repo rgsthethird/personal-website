@@ -9,7 +9,7 @@ app.get('/', function(req, res){
 	res.render("home");
 });
 
-app.post('/ebay', (req, res) => {
+app.get('/ebay', (req, res) => {
 	const challengeCode = req.query.challenge_code;
 	const verificationToken = 'asdfjhawenljk32h234asdfjkh_asdfaks2jvnme3';
 	const endpoint = 'https://www.robschwartz.co/ebay'
