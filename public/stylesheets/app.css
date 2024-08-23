@@ -366,7 +366,8 @@ body, html {
 
 .resume-header {
 	font-size: 2.25em;
-	/* padding-bottom: 7px; */
+	padding-bottom: 7px;
+	/* comment out padding bottom when enabling resume download again */
 	border-style: double;
 	border-top: none;
 	border-left: none;
