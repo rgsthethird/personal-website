@@ -244,6 +244,8 @@ body, html {
 	left: 0;
 	height: 185vh;
 	width: 100vw;
+	display: flex;
+	justify-content: end;
 }
 
 #about-backdrop {
